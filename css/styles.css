@@ -1,0 +1,559 @@
+body{
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+	overflow-x: hidden;
+}
+/*header section*/
+/* nav section*/
+.hero-section{
+	max-width: 100%;
+	height: 98vh;
+	position: relative;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	text-align: center;
+	color: #fff;
+	background-image: url("../images/pic2.jpg");
+	background-position: center center;
+	background-size: cover;
+}
+.overlay{
+	position: absolute;
+	top: 0;
+	bottom: 0;
+	height: 100%;
+	width: 100%;
+	background-color: rgba(0, 0, 0, 0.64);
+
+}
+.hero-text{
+	position: absolute;
+	z-index: 1;
+}
+.navbar{
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+	width: 100%;
+	height: 60px;
+	color: darkgrey;
+	position: absolute;
+	top: 0;
+	left: 0;
+	padding: 0 20px;
+	z-index: 10;
+
+}
+.nav-overlay{
+	position: absolute;
+	top: 0;
+	left: 0;
+	width: 100%;
+	height: 100%;
+	background-color: rgb(0, 0, 0, 0.02);
+	z-index: -1;
+}
+label #btn{
+	color: white;
+	font-size: 30px;
+	float: right;
+	line-height: 80px;
+	margin-right: 40px;
+	cursor: pointer;
+	display: none;
+}
+label #cancel{
+	color: white;
+	font-size: 30px;
+	float: right;
+	line-height: 80px;
+	margin-right: 40px;
+	cursor: pointer;
+	display: none;
+}
+#check{
+	display: none;
+}
+
+.logo h2{
+	border: 2px solid white;
+/*	height: 20px;*/
+	width: 20px;
+	padding: 5px 10px;
+	color: white;
+	font-family: nunito sans-serif;
+}
+
+.navbar > .nav-list1{
+	display: flex;
+	justify-content:center ;
+	gap: 15px;
+	padding-left: 250px;
+	font-size: 5px;
+}
+
+.navbar > .nav-list1 li a:hover{
+	color: white;
+}
+
+.navbar .nav-list1 li{
+	font-size: 2rem;
+	list-style-type: none;
+	margin-right: 100px;
+}
+
+.navbar .nav-list1 li a{
+	text-decoration: none;
+	display: flex;
+	color: darkgrey;
+}
+
+.nav h1{
+	text-align:center;
+	font-size: 50px;
+	letter-spacing: 5px;
+	align-items: center;
+	height: 80vh;
+	padding-top: 100px;
+	font-family: nunito sans-serif;
+}
+/*nav section ends here*/
+
+/*header section starts here*/
+.text h2{
+	font-size: 30px;
+	text-align: left;
+}
+.text{
+	margin-left: 25px
+}
+.text p{
+	font-size: 12px;
+	display: block;
+	max-width: 50%;
+	line-height: 20px;
+}
+.text span{
+	font-size: 12px;
+	display: block;
+	max-width: 90%;
+	line-height: 17px;
+	margin-top: 17px;
+}
+.image{
+	margin-left: 100px;
+	width: 500px;
+}
+.about{
+	display: flex;
+	margin-top: 80px;
+	width: 100%;
+}
+.container{
+	margin-top: 20px;
+}
+.skill{
+	margin-bottom: 15px ;
+}
+.skill h3{
+	font-size: 1.2rem;
+	font-weight: bold;
+	display: block;
+	margin-bottom: 8px;
+}
+.progress-bar{
+	width: 100%;
+	max-width: 400px;
+	background-color:gold;
+	height: 5px;
+	border-radius: 10px;
+	margin-bottom: 40px;
+	position: relative;
+/*	overflow: hidden;*/
+	overflow: scroll;
+}
+.skill-bar{
+	background-color: #4caf50;
+	height: 25%;
+	text-align: right;
+	padding-right: 10px;
+	border-radius: 10px;
+	text-align: center;
+/*	padding-right: 5px;*/
+	font-size: 0.9rem;
+	color: white;
+	line-height: 20px;
+}
+
+.btn{
+	margin-top: 25px;
+	display: flex;
+	gap: 15px;
+}
+
+.btn-1{
+	background-color: lightgreen;
+	color: white;
+	border: none;
+	border-radius: 15px;
+	width: 100px;
+	height: 30px;
+}
+.btn-2{
+	background-color: blue;
+	color: white;
+	border: none;
+	border-radius: 15px;
+	width: 100px;
+	height: 30px;
+}
+/*header section ends here*/
+
+/*hero section star here*/
+.all-2{
+	background-color: white;
+	height: 80;
+}
+
+.portfolio h1{
+	color: black;
+	font-size: 20px;
+	font-family: serif;
+	text-align: center;
+	padding-top: 100px;
+	padding-bottom: 15px;
+}
+
+.portfolio .nav-list li{
+	font-size: 12px;
+	padding-bottom: 15px;
+	list-style-type: none;
+	margin-right: 20px;
+/*	padding: 10px;*/
+
+}
+.portfolio .nav-list li a{
+	text-decoration: none;
+/*	display: flex;*/
+	color: darkgrey;
+	padding: 10px;
+
+}
+.portfolio> .nav-list li a:hover{
+	color: green;
+}
+.portfolio > .nav-list{
+	display: flex;
+	justify-content:center ;
+/*	gap: 10px;*/
+/*	padding-left: 150px;*/
+}
+.images{
+	display: flex;
+	gap: 10px;
+/*	margin-left: 150px;*/
+	justify-content: center;
+}
+.portfolio img{
+	border: 3px solid grey;
+	width: 200px;
+	height: 200px;
+	border-radius: 5px;
+	box-shadow: 10px 10px 6px grey;
+}
+.images .img-1{
+/*	width: 150px;*/
+	display: flex;
+	flex-direction: column;
+/*	margin-left: 100px;*/
+	gap: 20px;
+}
+.images .img-2{
+/*	width: 300px;*/
+	display: flex;
+	flex-direction: column;
+	gap: 20px;
+}
+.images .img-3{
+/*	width: 150px;*/
+	display: flex;
+	flex-direction: column;
+	gap: 20px;
+}
+.services h1{
+	font-size: 27px;
+}
+.websites{
+	border:2px solid lightgrey;
+	width: 230px;
+	height: 340px;
+	margin-bottom: 80px;
+}
+.all-4{
+	gap: 20px;
+	display: flex;
+	text-align: center;
+	justify-content: center;
+}
+.websites p{
+		display: flex;
+		color: grey;
+		font-size: 15px;
+		text-align: center;
+}
+.websites h3{
+		color: black;
+		font-size: 20px;
+}
+.websites i{
+	font-size: 50px;
+	color: green;
+	margin-top: 40px;
+}
+/*hero section ends here*/
+
+
+/*footer section starts here*/
+.all-6{
+	background-color: white;
+}
+.me{
+	display: flex;
+/*	padding-left: 100px;*/
+	justify-content: center;
+}
+ .all-6 h2{
+	font-size: 25px;
+	text-align: center;
+}
+
+.contacts{
+	background-color: white;
+	display: flex;
+}
+
+.input-group {
+    gap: 10px;
+    line-height: 30px;
+}
+
+.name-fields {
+    display: flex;
+    gap: 10px;
+}
+
+.name-fields input {
+    width: 50%;
+    border-top: none;
+    border-right: none;
+    border-left: none;
+    font-size: 14px;
+    padding: 10px;
+
+}
+.name1 input{
+	border-top: none;
+    border-right: none;
+    border-left: none;
+    width: 100%;
+    font-size: 14px;
+    padding: 10px;
+
+}
+
+
+textarea {
+/*    height: 80px;*/
+	border-top: none;
+	border-right: none;
+	border-left: none;
+	width: 100%;
+	font-size: 14px;
+	padding: 10px;
+
+}
+
+button:hover {
+    background-color: #567b56;
+}
+
+button{
+	border: none;
+	background-color: lightgreen;
+	color: white;
+	font-size: 10px;
+	justify-content: center;
+	border-radius: 10px;
+	width: 100px;
+	padding-bottom: 10px;
+	height:30px;
+}
+.info{
+	margin-left: 120px;
+	line-height: 10px;
+}
+.info .solid{
+	color: green;
+	font-size: 15px;
+}
+.info .location{
+	font-size: 15px;
+}
+
+.orbit{
+	margin-top: 10px;
+}
+.click{
+	background-color: lightgrey;
+	width: 80%;
+	height: 80%;
+	gap: 20px;
+	padding-left: 100px;
+	margin: auto;
+}
+
+.all-9{
+	display: flex;
+}
+
+h4{
+	font-size: 13px;
+	font-weight: bold;
+}
+
+ul{
+	list-style-type: none;
+	line-height: 20px;
+	color: grey;
+}
+.title p{
+	font-size: 10px;
+	max-width: 200px;
+	color: grey;
+	display: block;
+}
+.connect {
+	gap: 20px;
+	font-size: 50px;
+	color: grey;
+	font-size: 20px;
+}
+.services {
+	margin-left: 15px;
+	display: block;
+}
+.navigation{
+	margin-left: 15px;
+	display: block;
+}
+.contacts{
+	margin-left: 15px;
+	display: block;
+}
+
+.copy{
+	font-size: 15px;
+	color: grey;
+	text-align: center;
+}
+/*footer section ends here*/
+
+
+/*media query for responsiveness*/
+@media(min-width:320px)and (max-width:768px){
+	.navbar > .nav-list1{
+		display: none;
+	}
+	.hero-section{
+		max-width: 100%;
+	}
+	body{
+		min-width: 100vw;
+		overflow-x: hidden;
+	}
+	.nav h1{
+		font-size: 20px;
+		letter-spacing: 3px;
+		height: 40vh;
+	}
+
+	.logo h2{
+		margin-right: 500px;
+	}
+	label #btn{
+		display: block;
+		position: relative;
+		left: 350px;
+	}
+	.about{
+		display: block;
+		margin-top: 50px;
+	}
+	.image{
+		margin-left: 0;
+		width: 300px;
+	}
+	.text{
+		margin-left: 20px;
+		display:block;
+	}
+	.images .img-1{
+		gap: 10px;
+	}
+	.images .img-2{
+		gap: 10px;
+	}
+	.images .img-3{
+		gap: 10px;
+	}
+	.portfolio h1{
+		margin-left: 20px;
+	}
+	.portfolio img{
+		border: 2px solid black;
+		width: 150px;
+		height: 150px;
+		box-shadow: 2px 4px 2px grey;
+	}
+	.all-4{
+		display: block;
+/*		padding-left: 150px;*/
+	}
+	.websites{
+		height: 355px;
+		width: 250px;
+		margin-bottom: 40px;
+	}
+	.me{
+		padding-left: 50px;
+	}
+	.info{
+		margin-left: 70px;
+		line-height: 5px;
+	}
+	.info .location{
+		font-size: 10px;
+	}
+	.info .solid{
+		font-size: 13px;
+	}
+	.click{
+		padding-left: 20px;
+		height: 80vh;
+		width: 95%;
+	}
+	.namefield input{
+		font-size: 6px;
+	}
+	.name1 input{
+		font-size: 6px;
+	}
+	textarea{
+		font-size: 6px;
+	}
+	/*ul{
+		line-height: 28px;
+	}*/
+}
