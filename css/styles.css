@@ -444,8 +444,8 @@ ul{
 	margin-left: 15px;
 	display: block;
 }
-.navigation{
-	margin-left: 15px;
+.navagation{
+	/* margin-left: 15px; */
 	display: block;
 }
 .contacts{
@@ -463,18 +463,27 @@ ul{
 
 /*media query for responsiveness*/
 @media(min-width:320px)and (max-width:768px){
+	body{
+		overflow-x: hidden;
+	}
 	.navbar > .nav-list1{
-		display: none;
+		display: block;
+		margin-left: 100px;
+		position: relative;
+		top: -30px;
 	}
 	.hero-section{
 		max-width: 100%;
+	}
+	.navbar{
+		display: block;
 	}
 	body{
 		min-width: 100vw;
 		overflow-x: hidden;
 	}
 	.nav h1{
-		font-size: 20px;
+		font-size: 18px;
 		letter-spacing: 3px;
 		height: 40vh;
 	}
@@ -541,7 +550,7 @@ ul{
 	}
 	.click{
 		padding-left: 20px;
-		height: 80vh;
+		height: 90vh;
 		width: 95%;
 	}
 	.namefield input{
@@ -553,7 +562,10 @@ ul{
 	textarea{
 		font-size: 6px;
 	}
-	/*ul{
-		line-height: 28px;
-	}*/
+	.services{
+		margin-left: 19px;
+	}
+	.all-9{
+		line-height: 8px;
+	}
 }
