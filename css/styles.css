@@ -438,14 +438,23 @@ ul{
 .nava{
 	display: flex;
 	padding-right: 80px;
+	color: grey;
+	line-height: 15px;
 }
 .BT{
 	padding-right: 80px;
 	padding-left: 50px;
 }
 .services{
-	padding-right: 80px;
+	color: grey;
+	line-height: 4px;
 }
+.contact{
+	padding-right: 80px;
+	color: grey;
+	line-height: 4px;
+}
+
 
 .copy{
 	font-size: 15px;
@@ -462,9 +471,6 @@ ul{
 	}
 	.navbar > .nav-list1{
 		display: none;
-		margin-left: 100px;
-		position: relative;
-		top: -30px;
 	}
 	.hero-section{
 		max-width: 100%;
@@ -558,4 +564,5 @@ ul{
 	.all-9{
 		display: block;
 	} 
+
 }
