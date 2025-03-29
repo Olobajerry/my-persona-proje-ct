@@ -18,6 +18,7 @@ body{
 	background-image: url("../images/pic2.jpg");
 	background-position: center center;
 	background-size: cover;
+	overflow: hidden;
 }
 .overlay{
 	position: absolute;
@@ -402,17 +403,14 @@ button{
 	font-size: 15px;
 }
 
-.orbit{
+ .orbit{
 	margin-top: 10px;
 }
 .click{
 	background-color: lightgrey;
-	width: 80%;
-	height: 80%;
-	gap: 20px;
-	padding-left: 100px;
-	margin: auto;
-}
+	justify-self: center;
+	width: 80vw;
+} 
 
 .all-9{
 	display: flex;
@@ -430,27 +428,23 @@ ul{
 }
 .title p{
 	font-size: 10px;
-	max-width: 200px;
+	/* max-width: 200px; */
 	color: grey;
-	display: block;
 }
-.connect {
-	gap: 20px;
-	font-size: 50px;
-	color: grey;
-	font-size: 20px;
+.title{
+	display: flex;
+	padding-right: 80px;
 }
-.services {
-	margin-left: 15px;
-	display: block;
+.nava{
+	display: flex;
+	padding-right: 80px;
 }
-.navagation{
-	/* margin-left: 15px; */
-	display: block;
+.BT{
+	padding-right: 80px;
+	padding-left: 50px;
 }
-.contacts{
-	margin-left: 15px;
-	display: block;
+.services{
+	padding-right: 80px;
 }
 
 .copy{
@@ -467,7 +461,7 @@ ul{
 		overflow-x: hidden;
 	}
 	.navbar > .nav-list1{
-		display: block;
+		display: none;
 		margin-left: 100px;
 		position: relative;
 		top: -30px;
@@ -528,7 +522,7 @@ ul{
 	}
 	.all-4{
 		display: block;
-/*		padding-left: 150px;*/
+		justify-self: center;
 	}
 	.websites{
 		height: 355px;
@@ -548,11 +542,6 @@ ul{
 	.info .solid{
 		font-size: 13px;
 	}
-	.click{
-		padding-left: 20px;
-		height: 90vh;
-		width: 95%;
-	}
 	.namefield input{
 		font-size: 6px;
 	}
@@ -562,10 +551,11 @@ ul{
 	textarea{
 		font-size: 6px;
 	}
-	.services{
-		margin-left: 19px;
+	.BT{
+		padding-left: 10px;
+		padding-right: 30px;
 	}
 	.all-9{
-		line-height: 8px;
-	}
+		display: block;
+	} 
 }
