@@ -441,20 +441,23 @@ ul{
 	color: grey;
 	line-height: 15px;
 }
+.nava h4 {
+	color: #000;
+}
 .BT{
 	padding-right: 80px;
 	padding-left: 50px;
 }
 .services{
 	color: grey;
-	line-height: 4px;
+	line-height: 20px;
+	padding-left: 10px;
 }
 .contact{
-	padding-right: 80px;
+	padding-right: 100px;
 	color: grey;
-	line-height: 4px;
+	padding-left: 60px;
 }
-
 
 .copy{
 	font-size: 15px;
