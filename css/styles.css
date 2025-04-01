@@ -28,7 +28,7 @@ body{
 	display: flex;
 	justify-content: space-around;
 	height: 60px;
-	padding-top: 30px;
+	padding-top: 20px;
 }
 .logo h2{
 	border: 2px solid white;
@@ -361,6 +361,7 @@ button{
 	line-height: 4px;
 }
 .contact{
+	font-size: 20px;
 	padding-right: 80px;
 	color: grey;
 	line-height: 4px;
