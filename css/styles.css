@@ -1,195 +1,119 @@
-body{
+*{
 	margin: 0;
 	padding: 0;
 	box-sizing: border-box;
+	list-style: none;
+}
+body{
+	width: 100%;
+	max-width: 100%;
 	overflow-x: hidden;
 }
-/*header section*/
-/* nav section*/
-.hero-section{
+/*------header-section styling starts here-----*/
+.header-section{
+	width: 100%;
 	max-width: 100%;
 	height: 98vh;
-	position: relative;
-	display: flex;
-	align-items: center;
-	justify-content: center;
-	text-align: center;
-	color: #fff;
 	background-image: url("../images/pic2.jpg");
-	background-position: center center;
+	background-position: center;
 	background-size: cover;
-	overflow: hidden;
 }
-.overlay{
-	position: absolute;
-	top: 0;
-	bottom: 0;
+.header{
 	height: 100%;
 	width: 100%;
 	background-color: rgba(0, 0, 0, 0.64);
-
 }
-.hero-text{
-	position: absolute;
-	z-index: 1;
-}
-.navbar{
+.nav-container{
+	max-width: 100%;
 	display: flex;
-	justify-content: space-between;
-	align-items: center;
-	width: 100%;
+	justify-content: space-around;
 	height: 60px;
-	color: darkgrey;
-	position: absolute;
-	top: 0;
-	left: 0;
-	padding: 0 20px;
-	z-index: 10;
-
+	padding-top: 30px;
 }
-.nav-overlay{
-	position: absolute;
-	top: 0;
-	left: 0;
-	width: 100%;
-	height: 100%;
-	background-color: rgb(0, 0, 0, 0.02);
-	z-index: -1;
-}
-label #btn{
-	color: white;
-	font-size: 30px;
-	float: right;
-	line-height: 80px;
-	margin-right: 40px;
-	cursor: pointer;
-	display: none;
-}
-label #cancel{
-	color: white;
-	font-size: 30px;
-	float: right;
-	line-height: 80px;
-	margin-right: 40px;
-	cursor: pointer;
-	display: none;
-}
-#check{
-	display: none;
-}
-
 .logo h2{
 	border: 2px solid white;
-/*	height: 20px;*/
-	width: 20px;
-	padding: 5px 10px;
+	width: 50px;
+	padding: 10px;
 	color: white;
 	font-family: nunito sans-serif;
 }
-
-.navbar > .nav-list1{
+.navbar .nav-lists{
 	display: flex;
-	justify-content:center ;
-	gap: 15px;
-	padding-left: 250px;
-	font-size: 5px;
+	gap: 40px;
 }
-
-.navbar > .nav-list1 li a:hover{
-	color: white;
-}
-
-.navbar .nav-list1 li{
+.navbar .nav-lists li a{
 	font-size: 2rem;
-	list-style-type: none;
 	margin-right: 100px;
-}
-
-.navbar .nav-list1 li a{
 	text-decoration: none;
-	display: flex;
 	color: darkgrey;
 }
-
-.nav h1{
+.navbar .nav-lists li a:hover{
+	color: white;
+}
+.nav-container i{
+	font-size: 3rem;
+	color: darkgrey;
+	display: none;
+}
+.hero-text h1{
 	text-align:center;
 	font-size: 50px;
 	letter-spacing: 5px;
-	align-items: center;
-	height: 80vh;
 	padding-top: 100px;
 	font-family: nunito sans-serif;
+	color: #fff;
 }
-/*nav section ends here*/
+/*--------header-section styling ends here---------*/
 
-/*header section starts here*/
-.text h2{
-	font-size: 30px;
-	text-align: left;
+/*--------About-section styling starts here--------*/
+.about-section{
+	width: 100%;
+	max-width: 100%;
+	display: flex;
+	justify-content: center;
+	margin-top: 80px;
 }
-.text{
-	margin-left: 25px
+.section-1{
+	padding-left: 110px;
 }
-.text p{
-	font-size: 12px;
-	display: block;
-	max-width: 50%;
+.about-img img{
+	/* width: 35vw; */
+	height: 90vh;
+}
+.section-2{
+	padding-left: 30px;
+	margin-top: 30px;
 	line-height: 20px;
 }
-.text span{
+.about-text h2{
+	font-size: 30px;
+	padding-bottom: 10px;
+}
+.about-text p{
 	font-size: 12px;
 	display: block;
-	max-width: 90%;
-	line-height: 17px;
-	margin-top: 17px;
+	padding-right:400px;
 }
-.image{
-	margin-left: 100px;
-	width: 500px;
+.about-text span{
+	font-size: 12px;
+	display: block;
+	margin-top: 30px;
 }
-.about{
-	display: flex;
-	margin-top: 80px;
-	width: 100%;
-}
-.container{
-	margin-top: 20px;
-}
-.skill{
-	margin-bottom: 15px ;
-}
-.skill h3{
+h3{
 	font-size: 1.2rem;
 	font-weight: bold;
-	display: block;
-	margin-bottom: 8px;
 }
-.progress-bar{
-	width: 100%;
-	max-width: 400px;
-	background-color:gold;
-	height: 5px;
-	border-radius: 10px;
-	margin-bottom: 40px;
-	position: relative;
-/*	overflow: hidden;*/
-	overflow: scroll;
+.skills{
+	margin: 40px 0px 30px;
 }
 .skill-bar{
 	background-color: #4caf50;
-	height: 25%;
-	text-align: right;
-	padding-right: 10px;
 	border-radius: 10px;
 	text-align: center;
-/*	padding-right: 5px;*/
 	font-size: 0.9rem;
 	color: white;
-	line-height: 20px;
 }
-
 .btn{
-	margin-top: 25px;
 	display: flex;
 	gap: 15px;
 }
@@ -199,370 +123,387 @@ label #cancel{
 	color: white;
 	border: none;
 	border-radius: 15px;
-	width: 100px;
-	height: 30px;
+	padding: 10px;
 }
 .btn-2{
 	background-color: blue;
 	color: white;
 	border: none;
 	border-radius: 15px;
-	width: 100px;
-	height: 30px;
+	padding: 6px;
 }
-/*header section ends here*/
+/*--------About section ends here---------------*/
 
-/*hero section star here*/
-.all-2{
-	background-color: white;
-	height: 80;
+/*----------portfolio section start here---------*/
+.portfolio-section{
+	width: 100%;
+	max-width: 100%;
+	justify-content: center;
 }
 
 .portfolio h1{
 	color: black;
-	font-size: 20px;
+	font-size: 30px;
+	font-weight:bold;
 	font-family: serif;
 	text-align: center;
 	padding-top: 100px;
 	padding-bottom: 15px;
 }
-
-.portfolio .nav-list li{
-	font-size: 12px;
-	padding-bottom: 15px;
-	list-style-type: none;
-	margin-right: 20px;
-/*	padding: 10px;*/
-
+.portfolio ul{
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+    list-style: none;
+    padding: 10px 0;
 }
-.portfolio .nav-list li a{
-	text-decoration: none;
-/*	display: flex;*/
-	color: darkgrey;
-	padding: 10px;
 
+.portfolio ul li a {
+    text-decoration: none;
+    color: darkgray;
+    font-weight: bold;
+    padding: 8px 12px;
+    border-radius: 5px;
+    transition: background 0.3s, color 0.3s;
 }
-.portfolio> .nav-list li a:hover{
-	color: green;
-}
-.portfolio > .nav-list{
-	display: flex;
-	justify-content:center ;
-/*	gap: 10px;*/
-/*	padding-left: 150px;*/
+.portfolio ul li a:hover {
+    background: rgb(12, 192, 12);
+    color: #fff;
 }
 .images{
 	display: flex;
 	gap: 10px;
-/*	margin-left: 150px;*/
 	justify-content: center;
+	margin-top:20px;
 }
-.portfolio img{
-	border: 3px solid grey;
-	width: 200px;
-	height: 200px;
-	border-radius: 5px;
-	box-shadow: 10px 10px 6px grey;
+.images > div {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    align-items: center;
 }
-.images .img-1{
-/*	width: 150px;*/
+.images img {
+    border-radius: 8px;
+    box-shadow: 10px 3px 5px rgba(148, 141, 141, 0.671);
+    transition: transform 0.3s, box-shadow 0.3s;
+}
+.images img:hover {
+    transform: scale(1.03);
+    box-shadow: 4px 4px 12px rgba(0, 0, 0, 0.3);
+}
+/*----------portfolio section ends here---------*/
+
+/* ----------services styling start here----- */
+.services-section {
+	width: 100%;
+	max-width: 100%;
+	text-align: center;
+	margin-top: 80px;
+}
+.services{
 	display: flex;
-	flex-direction: column;
-/*	margin-left: 100px;*/
-	gap: 20px;
-}
-.images .img-2{
-/*	width: 300px;*/
-	display: flex;
-	flex-direction: column;
-	gap: 20px;
-}
-.images .img-3{
-/*	width: 150px;*/
-	display: flex;
-	flex-direction: column;
-	gap: 20px;
+	gap: 30px;
+	justify-content: center;
+	text-align: center;
+	padding-top: 30px;
 }
 .services h1{
-	font-size: 27px;
+	font-size: 30px;
+	font-weight: bold;
 }
 .websites{
-	border:2px solid lightgrey;
-	width: 230px;
-	height: 340px;
-	margin-bottom: 80px;
-}
-.all-4{
-	gap: 20px;
-	display: flex;
-	text-align: center;
-	justify-content: center;
-}
-.websites p{
-		display: flex;
-		color: grey;
-		font-size: 15px;
-		text-align: center;
+	border:1px solid lightgrey;
+	width: 400px;
+	height: 350px;
 }
 .websites h3{
-		color: black;
-		font-size: 20px;
+	font-size: 25px;
+	color: black;
+	font-family: Arial, Helvetica, sans-serif;
+	padding-top: 20px;
+}
+.websites p{
+	color: grey;
+	font-size: 18px;
+	line-height: 20px;
+	padding: 80px 10px 20px;
 }
 .websites i{
 	font-size: 50px;
 	color: green;
-	margin-top: 40px;
+	margin-top: 30px;
 }
-/*hero section ends here*/
+/*--------services section ends here----------*/
 
-
-/*footer section starts here*/
-.all-6{
-	background-color: white;
+/*--------contact section starts here----------*/
+.contact-section{
+	width: 100%;
+	max-width: 100%;
+	margin: 100px 0;
 }
-.me{
+.contact{
 	display: flex;
-/*	padding-left: 100px;*/
-	justify-content: center;
+	justify-content:space-evenly;
 }
- .all-6 h2{
+ .contact-section h2{
 	font-size: 25px;
 	text-align: center;
+	margin: 80px;
 }
-
-.contacts{
-	background-color: white;
-	display: flex;
-}
-
-.input-group {
+form {
     gap: 10px;
-    line-height: 30px;
+    line-height: 60px;
+	padding-left: 200px;
 }
-
-.name-fields {
+.names {
     display: flex;
     gap: 10px;
 }
-
-.name-fields input {
-    width: 50%;
+.names input {
+	width: 100%;
     border-top: none;
     border-right: none;
     border-left: none;
     font-size: 14px;
-    padding: 10px;
-
+    padding-bottom: 50px;
 }
-.name1 input{
+.email input{
 	border-top: none;
     border-right: none;
     border-left: none;
     width: 100%;
     font-size: 14px;
-    padding: 10px;
-
+    padding-bottom: 50px;
 }
-
-
 textarea {
-/*    height: 80px;*/
 	border-top: none;
 	border-right: none;
 	border-left: none;
 	width: 100%;
 	font-size: 14px;
-	padding: 10px;
-
+	padding-bottom: 50px;
 }
-
+.info h6{
+	font-size: 12px;
+	color: black;
+}
+.info h4{
+	font-size: 18px;
+	font-weight: bold;
+	color: black;
+}
+.info{
+	line-height: 40px;
+	margin-top: 10px;
+	padding-right: 200px;
+}
+.info p{
+	color: green;
+	font-size: 12px;
+}
 button:hover {
     background-color: #567b56;
 }
-
 button{
 	border: none;
-	background-color: lightgreen;
+	background-color:#96BB7C;
 	color: white;
-	font-size: 10px;
 	justify-content: center;
-	border-radius: 10px;
-	width: 100px;
-	padding-bottom: 10px;
-	height:30px;
+	border-radius: 50px;
+	/* width: 100px; */
+	padding: 18px;
 }
-.info{
-	margin-left: 120px;
-	line-height: 10px;
-}
-.info .solid{
-	color: green;
-	font-size: 15px;
-}
-.info .location{
-	font-size: 15px;
-}
+/* --------contact styling ends here-------- */
 
- .orbit{
-	margin-top: 10px;
+/*--------footer section starts here----------*/
+.footer-section{
+	width: 100%;
+	max-width: 100%;
+	margin-top:50px;
+	padding: 40px 40px;
+	background-color:rgba(233, 228, 228, 0.705);
 }
-.click{
-	background-color: lightgrey;
-	justify-self: center;
-	width: 80vw;
-} 
-
-.all-9{
+.footer-container{
 	display: flex;
+	flex-wrap: wrap;
+	justify-content: space-evenly;
+	margin: 50px 50px 0px 50px;
 }
-
-h4{
+.footer-container h4{
+	font-family: Arial, Helvetica, sans-serif;
+	color: black;
+	font-size: 16px;
+	font-weight: 100;
+	padding-bottom: 30px;
+}
+.footer-container .Orbit p{
 	font-size: 13px;
-	font-weight: bold;
-}
-
-ul{
-	list-style-type: none;
+	color: grey;
 	line-height: 20px;
+}
+.Orbit .connect{
+	margin-top: 30px;
+}
+.footer-container .footer-list li{
 	color: grey;
+	line-height: 40px;
 }
-.title p{
-	font-size: 10px;
-	/* max-width: 200px; */
+.footer-container .footer-list{
 	color: grey;
+	line-height: 20px;
 }
-.title{
-	display: flex;
-	padding-right: 80px;
+.connect-icons{
+	margin-top: 40px;
 }
-.nava{
-	display: flex;
-	padding-right: 80px;
-	color: grey;
-	line-height: 15px;
+.connect-icons i{
+	font-size: 20px;
+	border-radius: 50px;
+	padding: 5px;
+	background-color:grey;
+	color: #fff;
 }
-.BT{
-	padding-right: 80px;
-	padding-left: 50px;
+.copy {
+    margin-top: 40px;
+    text-align: center;
+    color: darkgray;
 }
-.services{
-	color: grey;
-	line-height: 4px;
-}
-.contact{
-	padding-right: 80px;
-	color: grey;
-	line-height: 4px;
-}
-
-
-.copy{
-	font-size: 15px;
-	color: grey;
-	text-align: center;
-}
-/*footer section ends here*/
+/*---------footer section ends here---------*/
 
 
 /*media query for responsiveness*/
-@media(min-width:320px)and (max-width:768px){
+@media (max-width:768px){
 	body{
 		overflow-x: hidden;
 	}
-	.navbar > .nav-list1{
-		display: none;
-	}
-	.hero-section{
+	.header-section{
+		width: 100%;
 		max-width: 100%;
 	}
-	.navbar{
-		display: block;
+	.navbar  .nav-lists{
+		display: none;
 	}
-	body{
-		min-width: 100vw;
-		overflow-x: hidden;
+	.nav-container i{
+		display:inline;
 	}
-	.nav h1{
-		font-size: 18px;
-		letter-spacing: 3px;
-		height: 40vh;
+	.nav-container{
+		max-width: 100%;
+		width: 100%;
+		height: 80px;
+		max-width: 100%;
+		background-color: #fff;
+		position: fixed;
+		z-index: 3;
 	}
-
 	.logo h2{
-		margin-right: 500px;
+		border: 2px solid darkgrey;
+		color: rgba(0, 0, 0, 0.64);;
 	}
-	label #btn{
-		display: block;
-		position: relative;
-		left: 350px;
+	.hero-text h1{
+		text-align:center;
+		font-size: 25px;
+		letter-spacing:4px;
+		padding-top: 200px;
 	}
-	.about{
-		display: block;
-		margin-top: 50px;
+	/* about section */
+	.about-section{
+		width: 100%;
+		max-width: 100%;
+		display: flex;
+		flex-direction: column;
+		margin-top: 20px;
 	}
-	.image{
-		margin-left: 0;
-		width: 300px;
+	.section-1{
+		padding-left:0px;
 	}
-	.text{
-		margin-left: 20px;
-		display:block;
+	.about-img img{
+	    width: 100%;
+	    height: 80vh;
+		/* padding: 40px; */
 	}
-	.images .img-1{
-		gap: 10px;
+	.section-2{
+		padding-left: 10px;
+		margin-top: 30px;
+		line-height:25px;
 	}
-	.images .img-2{
-		gap: 10px;
+	.about-text p{
+		font-size: 25px;
+		padding-right:50px;
 	}
-	.images .img-3{
-		gap: 10px;
+	.about-text span{
+		font-size: 20px;
+		margin-top: 30px;
 	}
-	.portfolio h1{
-		margin-left: 20px;
+	/* portfolio section */
+	.portfolio-section{
+		width: 100%;
+		max-width: 100%;
+		justify-content: center;
 	}
-	.portfolio img{
-		border: 2px solid black;
-		width: 150px;
-		height: 150px;
-		box-shadow: 2px 4px 2px grey;
+	.images{
+		display: flex;
+		flex-direction: column;
 	}
-	.all-4{
-		display: block;
-		justify-self: center;
+	.images img{
+		width: 90%;
+		height:65vh;
+		border-radius: 20px;
+		box-shadow: 10px 1px 5px rgba(148, 141, 141, 0.671);
+	}
+	/* services section */
+	.services-section {
+		width: 100%;
+		max-width: 100%;
+	}
+	.services{
+		display: flex;
+		flex-direction: column;
+		gap: 30px;
+		margin-left: 30px;
 	}
 	.websites{
-		height: 355px;
-		width: 250px;
-		margin-bottom: 40px;
+		border:1px solid lightgrey;
+		width: 300px;
+		height: 350px;
+		margin-left: 10px;
+	}   
+	/* contact section */
+	.contact-section{
+		width: 100%;
+		max-width: 100%;
+		margin: 100px 0;
 	}
-	.me{
-		padding-left: 50px;
+	.contact{
+		display: flex;
+		flex-direction: column;
 	}
-	.info{
-		margin-left: 70px;
-		line-height: 5px;
+	form {
+		line-height: 10px;
+		padding-left: 200px;
 	}
-	.info .location{
-		font-size: 10px;
+	form {
+        line-height: 5;
+        padding-left: 0px;
+        width: 100%;
+        padding: 20px;
+    }
+	.info {
+		line-height: 50px;
+		margin-top: 0px;
+		padding: 20px;
 	}
-	.info .solid{
+	/*footer section  */
+	.footer-section{
+		width: 100%;
+		max-width: 100%;
+	}
+	.footer-container h4{
+		margin-top:40px ;
+	}
+	.connect-icons i{
 		font-size: 13px;
+		padding: 7px;
 	}
-	.namefield input{
-		font-size: 6px;
+	.service{
+		padding-left: 20px;
 	}
-	.name1 input{
-		font-size: 6px;
-	}
-	textarea{
-		font-size: 6px;
-	}
-	.BT{
-		padding-left: 10px;
-		padding-right: 30px;
-	}
-	.all-9{
-		display: block;
-	} 
-
 }
